@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Template para Hackathon</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/mycss.css') }}">
+    </head>
+    <body>
+        <h1>Jugadas de la Hackathon</h1>
+        <div>
+            {% for objeto in objetos%}
+            <p>{{ objeto}} </p>
+            <img src="{{ url_for('static', filename ='img/'~ loop.index ~'.png')}}">
+            {% endfor %}
+            <h1 style="color: red;">{{over}}</h1>
+        </div>
+        
+        
+        
+    </body>
+</html>

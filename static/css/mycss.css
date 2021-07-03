@@ -1,0 +1,63 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* body {
+    background-image: url("/static/img/background.jpg");
+    background-size: 90%;
+    background-repeat: repeat;
+} */
+h1 {
+    text-align: center;
+}
+
+#jugadas{
+    overflow-y: scroll;
+    height: 600px ;
+}
+
+#jugadas p {
+    text-align: center;
+    color: aliceblue;
+   
+
+}
+
+.jugador{
+    width: 200px;
+    border-radius: 60px;
+    border: 2px solid orange;
+}
+
+.titulo{
+    color: #CB9614;
+}
+
+.carta{
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid blue;
+}
+
+
+/* img{
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid blue;
+} */
+
+
+
+.jugadas{
+    height: 250px;
+    border-radius: 20px;
+    border: 1px dotted red;
+    
+}
+
+div{
+    width: 900px;
+    display: inline-block;
+    text-align: center;
+    margin-right: auto;
+}
